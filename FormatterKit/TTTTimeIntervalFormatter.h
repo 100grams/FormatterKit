@@ -142,4 +142,12 @@
 - (NSString *)stringForTimeIntervalFromDate:(NSDate *)startingDate
                                      toDate:(NSDate *)endingDate;
 
+/**
+ Returns a localized time interval unit
+ 
+ @param number The number for which unit should refer (determines singlular or plural)
+ @param unit The unit to return 
+ */
+- (NSString *)localizedStringForNumber:(NSUInteger)number ofCalendarUnit:(NSCalendarUnit)unit;
+
 @end
